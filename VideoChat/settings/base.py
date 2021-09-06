@@ -97,3 +97,12 @@ STATIC_URL = '/static/'
 
 # Default auto field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+"""
+Double quotes for text
+Single quotes for anything that behaves like an identifier
+Double quoted raw string literals for regexps
+Tripled double quotes for docstrings
+
+"""
