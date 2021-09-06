@@ -46,7 +46,7 @@ else:
         return render(request, 'agora/index.html', response)
 
     # Pusher Authentication                             ###
-    def pusher(request):
+    def pusher_auth(request):
         payload = pusher_client.authenticate(
             channel = request.POST['channel_name'],
             socket_id = request.POST['socket_id'],
