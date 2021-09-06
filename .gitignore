@@ -1,1 +1,4 @@
 env/
+agora/__pycache__
+agora/migrations
+.env
