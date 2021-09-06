@@ -1,12 +1,13 @@
 try:
     import os
-    from base import *
+    from .base import *
 
 except Exception as e:
     print(e)
 
 # DEBUG MODE
 DEBUG = os.environ['DEBUG']
+print("Debug Mode:", DEBUG)
 
 ALLOWED_HOSTS = ['ip-address', 'https://zyz.com/']
 

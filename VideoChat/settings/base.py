@@ -15,8 +15,6 @@ dotenv.load_dotenv()
 # Django SECRET KEY
 SECRET_KEY = os.environ['SECRET_KEY']
 
-# DEBUG MODE
-DEBUG = os.environ['DEBUG']
 
 # Application definition
 INSTALLED_APPS = [

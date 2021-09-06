@@ -1,13 +1,15 @@
 # imports
 try:
     import os
-    from base import *
+    from .base import *
 
 except Exception as e:
     print(e)
 
 # DEBUG MODE
+# It traverse developement two times?? but on updated one time traverse
 DEBUG = os.environ['DEBUG']
+print("Debug Mode:", DEBUG)
 
 ALLOWED_HOSTS = ['*']
 
@@ -31,6 +33,11 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.signals.SignalsPanel',
     'debug_toolbar.panels.logging.LoggingPanel',
     'debug_toolbar.panels.redirects.RedirectsPanel',
+]
+
+# Debug MiddleWare
+MIDDLEWARE += [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 SHOW_TOOLBAR = os.environ['SHOW_TOOLBAR']

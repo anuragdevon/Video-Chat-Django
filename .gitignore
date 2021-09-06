@@ -1,4 +1,8 @@
 env/
+.env
+
 agora/__pycache__
 agora/migrations
-.env
+
+VideoChat/__pycache__/
+VideoChat/settings/__pycache__
