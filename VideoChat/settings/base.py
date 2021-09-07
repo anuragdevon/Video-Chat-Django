@@ -8,7 +8,7 @@ except Exception as e:
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+print(BASE_DIR)
 # Load 
 dotenv.load_dotenv()
 
